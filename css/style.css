@@ -3,6 +3,15 @@ body {
     font-family: 'Balsamiq Sans', cursive;
 }
 
+a {
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+a:hover {
+    transform: translate(30px, 0px);
+}
+
 li {
     font-size: 70px;
     margin-bottom: 50px;
