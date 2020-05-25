@@ -17,13 +17,13 @@ li a {
 }
 li a:hover {
     transition-property: transform;
-    transition-duration: 0.5s;
-    transform: translate(30px, 0px);
+    transition-duration: 0.3s;
+    transform: translate(20px, 0px);
 }
 
 li a:active {
     transition-property: transform;
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
     transform: translate(15px, 5px);
     font: 60px
 }
