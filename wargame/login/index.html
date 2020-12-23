@@ -4,6 +4,23 @@
         <title>$1m0hYa Wargame</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../../css/style.css">
+        <script>
+            function login_action() {
+                var id = document.getElementById('id').value;
+                var pw = document.getElementById('password').value;
+
+                if (id.length <= 0) {
+                    alert("id를 입력해주세요.");
+                }
+                else if (pw.length <= 0) {
+                    alert("pw를 입력해주세요.");
+                }
+                else {
+                    alert("로그인에 성공하셨습니다.");
+                    document.location = "../prob/";
+                }
+            }
+        </script>
     </head>
     <body class="wargame">
         <div style="background-color: rgb(32, 32, 32);position:fixed;width:100%;height:70px">
@@ -25,19 +42,17 @@
                         <label>
                             <span style="font-size:2rem; color:white;">ID</span>
                             <br>
-                            <input type="text" name="ID" placeholder="ID" required>
+                            <input class="text" type="text" name="ID" placeholder="ID" id="id" required>
                         </label>
                         <br><br><br>
                         <label>
                             <span style="font-size:2rem; color:white;">Password</span>
                             <br>
-                            <input type="text" name="password" placeholder="Password" required>
+                            <input class="test" type="text" name="password" placeholder="Password" id="password" required>
                         </label>
                         <br><br><br><br><br><br><br>
                         <label>
-                            <a href="../prob">
-                                <input class="submit" type="button" name="submit" value="submit">
-                            </a>
+                            <input class="submit" type="button" name="submit" value="submit" onclick="login_action()">
                         </label>
                     </form>
                 </div>
